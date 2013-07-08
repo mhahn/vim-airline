@@ -50,9 +50,7 @@ let g:airline#themes#simple#normal = {
       \ 'file':           [ '#ff0000' , s:guibg , 160       , s:termbg , ''     ] ,
       \ 'inactive':       [ '#4e4e4e' , s:guibg , 239       , s:termbg , ''     ] ,
       \ }
-let g:airline#themes#simple#normal_modified = {
-      \ 'statusline':     [ '#df0000' , s:guibg, 160     , s:termbg    , ''     ] ,
-      \ }
+let g:airline#themes#simple#normal_modified = copy(g:airline#themes#simple#normal)
 
 let s:I1 = s:swap ? [ s:guibg, '#5fff00' , s:termbg , 82 ] : [ '#5fff00' , s:guibg, 82 , s:termbg ]
 let s:I2 = [ '#ff5f00' , s:guibg, 202 , s:termbg ]
